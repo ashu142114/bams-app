@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: system-ui;
+  background: #f4f6f9;
+}
+
+/* SPLASH */
+#splash {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #2e9aa7;
+  color: white;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* AUTH */
+.auth-card {
+  padding: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #2e9aa7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.error {
+  color: red;
+}
+
+.loading {
+  color: #2e9aa7;
+}
+
+.switch {
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* APP */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: white;
+}
+
+main {
+  padding: 15px;
+  margin-bottom: 60px;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+.bottom-nav button {
+  flex: 1;
+  background: none;
+  color: black;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
