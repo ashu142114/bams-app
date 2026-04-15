@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAMS - Workforce Management</title>
+
+  <!-- SEO -->
+  <meta name="description" content="BAMS - Bharat Attendance Management System for workforce, tasks, attendance and HR control.">
+  <meta name="keywords" content="attendance system, workforce, HR, SaaS">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- SPLASH -->
+<div id="splash">BAMS</div>
+
+<!-- AUTH -->
+<div id="auth">
+  <h2 id="authTitle">Login</h2>
+
+  <input id="name" placeholder="Name (Signup only)" class="hidden">
+  <input id="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
+
+  <button onclick="handleAuth()">Continue</button>
+  <p id="error"></p>
+
+  <span onclick="toggleAuth()" id="toggleText">Create account</span>
+</div>
+
+<!-- APP -->
+<div id="app" class="hidden">
+
+  <!-- HEADER -->
+  <header>
+    <h3 id="roleTitle"></h3>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <!-- CONTENT -->
+  <main id="content"></main>
+
+  <!-- BOTTOM NAV -->
+  <nav id="bottomNav"></nav>
+
+</div>
+
+<script src="db.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
